@@ -10,10 +10,10 @@ function App() {
 
   return (
     <div>
-      <section>
+      <section id="Homepage">
         <Navbar />
       </section>
-      <section>2</section>
+      <section id="Services">Services</section>
       <section>3</section>
       <section>4</section>
       <section>5</section>

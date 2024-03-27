@@ -1,8 +1,10 @@
+import Sidebar from "../sidebar/sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
+      <Sidebar />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
@@ -20,9 +22,6 @@ const Navbar = () => {
           </a>
           <a href="#">
             <img src="/youtube.png" alt=""></img>
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt=""></img>
           </a>
         </div>
       </div>
