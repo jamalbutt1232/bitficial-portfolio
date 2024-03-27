@@ -15,10 +15,10 @@ function App() {
       </section>
       <section id="Services">Services</section>
       <section>3</section>
-      <section>4</section>
+      <section id="Portfolio">4</section>
       <section>5</section>
       <section>6</section>
-      <section>7</section>
+      <section id="Contact">7</section>
     </div>
   );
 }
