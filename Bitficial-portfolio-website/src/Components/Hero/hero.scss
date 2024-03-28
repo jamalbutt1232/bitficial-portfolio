@@ -3,14 +3,14 @@
   height: 100vh;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   align-items: center;
-  justify-content: space-between; // Adjusted to space out the child elements
+  justify-content: space-between;
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
     margin: auto;
-    display: flex; // Ensure that children are flex items
-    align-items: center; // Vertically center children
+    display: flex;
+    align-items: center;
     left: 0;
 
     .textContainer {
@@ -28,6 +28,7 @@
           border-radius: 10px;
           background-color: transparent;
           color: white;
+          margin-right: 20px;
         }
       }
     }
@@ -109,5 +110,14 @@
     transform: translateY(-50%) scale(3);
     height: auto;
     width: auto;
+  }
+  .slidingtext {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
   }
 }

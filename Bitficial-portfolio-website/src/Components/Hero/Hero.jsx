@@ -1,6 +1,28 @@
 import { motion } from "framer-motion";
 import "./hero.scss";
-
+const textvariants = {
+  scrollbuttons: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
+};
+const slider = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 10,
+    },
+  },
+};
 const Hero = () => {
   return (
     <div className="hero">
@@ -12,7 +34,23 @@ const Hero = () => {
             <button>See the latest works</button>
             <button>Contact Us</button>
           </div>
+          <div className="scrollbutton">
+            <motion.img
+              variants={textvariants}
+              animate="scrollbuttons"
+              src="/scroll.png"
+              alt=""
+            />
+          </div>
         </div>
+        <motion.div
+          className="slidingtext"
+          variants={slider}
+          initial="initial"
+          animate="animate"
+        >
+          Bitficial Technologies
+        </motion.div>
 
         <motion.img
           src="./bitficial.png"
