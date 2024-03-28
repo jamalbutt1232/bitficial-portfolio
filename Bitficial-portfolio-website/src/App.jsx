@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./Components/navbar/navbar";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <div>
       <section id="Homepage">
         <Navbar />
+        <Hero />
       </section>
       <section id="Services">Services</section>
       <section>3</section>

@@ -1,0 +1,32 @@
+.hero {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  align-items: center;
+  justify-content: space-between; // Adjusted to space out the child elements
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex; // Ensure that children are flex items
+    align-items: center; // Vertically center children
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      z-index: 2; // Ensure it's above the image if they overlap
+    }
+  }
+}
+
+.imageContainer {
+  position: absolute;
+  right: 20%;
+  top: 60%;
+  transform: translateY(-50%) scale(3);
+  height: auto;
+  width: auto;
+}
