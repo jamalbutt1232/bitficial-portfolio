@@ -5,6 +5,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./Components/navbar/navbar";
 import Hero from "./Components/Hero/Hero";
+import Parallax from "./Components/Parallax/Parallax";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,7 +16,9 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">Services</section>
+      <section id="Services">
+        <Parallax />
+      </section>
       <section>3</section>
       <section id="Portfolio">4</section>
       <section>5</section>
