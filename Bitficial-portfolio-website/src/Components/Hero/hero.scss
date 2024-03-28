@@ -11,22 +11,103 @@
     margin: auto;
     display: flex; // Ensure that children are flex items
     align-items: center; // Vertically center children
+    left: 0;
 
     .textContainer {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 40px;
-      z-index: 2; // Ensure it's above the image if they overlap
+      z-index: 2;
+
+      .buttons {
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+        }
+      }
     }
   }
-}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 
-.imageContainer {
-  position: absolute;
-  right: 20%;
-  top: 60%;
-  transform: translateY(-50%) scale(3);
-  height: auto;
-  width: auto;
+  @keyframes blinkCursor {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: black;
+    }
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes typing {
+    0%,
+    50% {
+      width: 0;
+      opacity: 0;
+    }
+    51% {
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  .onetyping {
+    overflow: hidden;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: typing 4s steps(30, end) forwards,
+      blinkCursor 0.75s step-end infinite alternate;
+    max-width: fit-content;
+    color: white;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+
+  .typing {
+    overflow: hidden;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end) forwards,
+      blinkCursor 0.75s step-end infinite alternate;
+    max-width: fit-content; /* Adjust width to fit content */
+    color: rebeccapurple;
+    animation-delay: 3.5s;
+    opacity: 0;
+  }
+
+  .imageContainer {
+    position: absolute;
+    right: 20%;
+    top: 60%;
+    transform: translateY(-50%) scale(3);
+    height: auto;
+    width: auto;
+  }
 }

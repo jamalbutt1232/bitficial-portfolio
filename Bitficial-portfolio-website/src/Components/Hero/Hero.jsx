@@ -6,7 +6,8 @@ const Hero = () => {
     <div className="hero">
       <div className="wrapper">
         <div className="textContainer">
-          <h1>We bring your ideas from Inception to Completion</h1>
+          <h1 className="onetyping">We bring your ideas from </h1>
+          <h1 className="typing"> Inception to Completion</h1>
           <div className="buttons">
             <button>See the latest works</button>
             <button>Contact Us</button>
