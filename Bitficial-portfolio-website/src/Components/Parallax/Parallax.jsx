@@ -1,9 +1,10 @@
+import React from "react";
 import "./parallax.scss";
 
 const Parallax = ({ type }) => {
   return (
     <div
-      className="Paralax"
+      className="Parallax"
       style={{
         background:
           type === "services"
@@ -11,7 +12,7 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132 , #505064)",
       }}
     >
-      <h1>{type === "services" ? "What we do?" : "What we did?"}</h1>
+      <h1>{type === "services" ? "What we did?" : "What we do?"}</h1>
       <div className="mountains"></div>
       <div className="planets"></div>
       <div className="stars"></div>
