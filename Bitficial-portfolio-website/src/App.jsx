@@ -6,6 +6,8 @@ import "./App.css";
 import Navbar from "./Components/navbar/navbar";
 import Hero from "./Components/Hero/Hero";
 import Parallax from "./Components/Parallax/Parallax";
+import Services from "./Components/Services/Services";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,10 +21,11 @@ function App() {
       <section id="Services">
         <Parallax type="services" />
       </section>
-      <section>3</section>
+      <section><Services/></section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
+      <Portfolio/>
       <section>5</section>
       <section>6</section>
       <section id="Contact">7</section>

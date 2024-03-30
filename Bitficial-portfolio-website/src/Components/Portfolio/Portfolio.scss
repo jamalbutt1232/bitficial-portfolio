@@ -1,0 +1,34 @@
+.portfolio{
+position: relative;
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: rgb(196, 78, 196);
+        font-size: 36px;
+        
+        .progressbar{
+height: 10px;
+background-color: white;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        img{
+            flex: 1;
+
+        }
+        .textcontainer{
+            flex: 1;
+            height: 50%
+            ;
+
+        }
+    }
+
+}
