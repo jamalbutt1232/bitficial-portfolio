@@ -1,0 +1,45 @@
+.contact {
+    max-height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .textcontainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        h1 {
+            font-size: 100px;
+            line-height: 88px;
+        }
+        span {
+            font-weight: 300;
+        }
+    } // <-- Closing curly brace for .textcontainer
+
+    .formcontainer {
+        flex: 1;
+        .phonesvg {
+            background-color: rebeccapurple;
+            position: absolute;
+            margin: auto;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .input {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
