@@ -6,11 +6,11 @@
   justify-content: space-between;
 
   .wrapper {
-    max-width: 1366px;
+    max-width: 100vh;
     height: 100%;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: left;
     left: 0;
 
     .textContainer {
@@ -112,12 +112,16 @@
     width: auto;
   }
   .slidingtext {
-    position: absolute;
-    font-size: 50vh;
+    position: relative;
+    font-size: 30vh;
     bottom: -120px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: xx-large;
   }
 }

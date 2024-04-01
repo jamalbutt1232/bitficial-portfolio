@@ -31,7 +31,9 @@ const Hero = () => {
           <h1 className="onetyping">We bring your ideas from </h1>
           <h1 className="typing"> Inception to Completion</h1>
           <div className="buttons">
-            <button>See the latest works</button>
+            <a href="Portfolio.jsx">
+              <button>See the latest works</button>
+            </a>
             <button>Contact Us</button>
           </div>
           <div className="scrollbutton">
@@ -49,7 +51,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          Bitficial Technologies
+          Bitficial
         </motion.div>
 
         <motion.img
