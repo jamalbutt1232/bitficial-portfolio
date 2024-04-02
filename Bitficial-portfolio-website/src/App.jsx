@@ -9,9 +9,9 @@ import Parallax from "./Components/Parallax/Parallax";
 import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
+import Sidebar from "./Components/sidebar/sidebar";
 
 function App() {
-  alert("If you are using mobile, use Desktop or PC for better experience");
   return (
     <div>
       <section id="Homepage">

@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./parallax.scss";
 import { motion } from "framer-motion";
+
 const Parallax = ({ type }) => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
       className="Parallax"
@@ -17,7 +27,16 @@ const Parallax = ({ type }) => {
       </motion.h1>
       <motion.div className="mountains">1</motion.div>
       <motion.div className="planets">2</motion.div>
-      <motion.div className="stars">3</motion.div>
+      {/* Apply the parallax scrolling effect to stars */}
+      <motion.div
+        className="stars"
+        style={{
+          // Adjust the "speed" of the parallax effect by changing the multiplier
+          transform: `translateY(${offsetY * 0.5}px)`,
+        }}
+      >
+        3
+      </motion.div>
     </div>
   );
 };
