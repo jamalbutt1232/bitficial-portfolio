@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 export const ToggleButton = ({ setOpen }) => {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
-      <svg width="50" height="50" viewBox="0 0 24 24">
-        {/* Transform the top line into the first diagonal of the cross */}
+      <svg width="50" height="40" viewBox="0 0 24 24">
         <motion.path
           fill="none"
           stroke="black"
@@ -19,16 +18,15 @@ export const ToggleButton = ({ setOpen }) => {
               opacity: 1,
             },
             open: {
-              rotate: 45,
-              x: 5, // Adjusted for center alignment
-              y: 7, // Adjusted for center alignment
+              rotate: 42,
+              x: 7,
+              y: 7,
               opacity: 1,
             },
           }}
           transition={{ duration: 0.5 }}
         />
 
-        {/* Middle line disappears in the open state */}
         <motion.path
           fill="none"
           stroke="black"
@@ -42,7 +40,6 @@ export const ToggleButton = ({ setOpen }) => {
           transition={{ duration: 0.5 }}
         />
 
-        {/* Transform the bottom line into the second diagonal of the cross */}
         <motion.path
           fill="none"
           stroke="black"
@@ -57,9 +54,9 @@ export const ToggleButton = ({ setOpen }) => {
               opacity: 1,
             },
             open: {
-              rotate: -45,
-              x: 5, // Adjusted for center alignment
-              y: -7, // Adjusted for center alignment
+              rotate: -40,
+              x: 8, // Adjusted for center alignment
+              y: -11, // Adjusted for center alignment
               opacity: 1,
             },
           }}

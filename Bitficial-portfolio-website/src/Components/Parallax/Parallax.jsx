@@ -25,13 +25,12 @@ const Parallax = ({ type }) => {
       <motion.h1>
         {type === "services" ? "What we do?" : "What we did?"}
       </motion.h1>
-      <motion.div className="mountains">1</motion.div>
-      <motion.div className="planets">2</motion.div>
-      {/* Apply the parallax scrolling effect to stars */}
+      <motion.div className="mountains"></motion.div>
+      <motion.div className="planets"></motion.div>
+
       <motion.div
         className="stars"
         style={{
-          // Adjust the "speed" of the parallax effect by changing the multiplier
           transform: `translateY(${offsetY * 0.5}px)`,
         }}
       >
