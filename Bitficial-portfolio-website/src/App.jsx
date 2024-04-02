@@ -11,13 +11,12 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  alert("If you are using mobile, use Desktop or PC for better experience");
   return (
     <div>
       <section id="Homepage">
         <Navbar />
-        {<Hero />}
+        <Hero />
       </section>
       <section id="Services">
         <Parallax type="services" />

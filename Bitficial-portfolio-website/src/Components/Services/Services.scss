@@ -1,80 +1,131 @@
-.services{
-    background: linear-gradient(180deg, #0c0c1d, #111132);
-    height:100%;
+@import "../../app.scss";
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .textcontainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      color: gray;
+      text-align: right;
+    }
+    hr {
+      width: 400px;
+      border: none;
+      border-top: 0.5px solid gray;
+      @include mobile {
+        width: 300px;
+        align-content: center;
+      }
+    }
+  }
+  .titlecontainer {
+    flex: 2;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    .textcontainer{
-
-        flex:1;
-        align-self: flex-end;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        p {
-font-weight: 200;
-font-size: 20px;
-color: gray;
-text-align: right;
-        }
-        hr{
-            width: 400px;
-            border: none;
-            border-top: 0.5px solid gray ;
-        }
+    align-items: center;
+    @include mobile {
+      width: 100%;
     }
-    .titlecontainer{
-        flex: 2;
-
-        display: flex;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      @include mobile {
         flex-direction: column;
-        align-items: center;
-        .title{
-
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            img{
-                width: 300px;
-                height: 100px;
-                border-radius: 50px;
-                object-fit: cover;
-            }
-            h1{
-                font-size: 96px;
-font-weight: 100;
-            }
-            button{
-                width: 300px;
-                height: 100px;
-                border-radius: 50px;
-                background-color: orange;
-                border: none;
-                font-size: 26px;
-                cursor: pointer;
-                
-            }
+        text-align: center;
+        gap: 20px;
+      }
+      img {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+        @include mobile {
+          width: 200px;
+          height: 50px;
         }
+      }
+      h1 {
+        font-size: 96px;
+        font-weight: 100;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+      button {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 26px;
+        color: black;
+        cursor: pointer;
+        @include mobile {
+          font-size: 5 px;
+          width: 130px;
+          height: 75px;
+        }
+      }
     }
-    .listcontainer{
-        flex: 2;
-display: flex;
-max-width: 1366px;
-margin: auto;
-.box{
-    padding: 50px;
-    border: 0.5px solid gray;
+  }
+  .listcontainer {
+    flex: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    button{
+    max-width: 1366px;
+    margin: auto;
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+    .box {
+      padding: 50px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include mobile {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+      p {
+        @include mobile {
+          display: none;
+        }
+      }
+      button {
         padding: 10;
         background-color: orange;
         border: none;
         cursor: pointer;
+        @include mobile {
+          background-color: transparent;
+          border: 1px solid orange;
+          color: orange;
+          width: 75%;
+          padding: 5;
+          justify-content: center;
+        }
+      }
     }
-}
-    }
-
+  }
 }

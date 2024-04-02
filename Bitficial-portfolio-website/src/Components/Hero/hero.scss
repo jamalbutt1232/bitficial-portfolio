@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
   display: flex;
   height: 100vh;
@@ -20,6 +22,10 @@
       justify-content: center;
       gap: 40px;
       z-index: 2;
+      @include mobile {
+        height: 75%;
+        width: 100%;
+      }
 
       .buttons {
         button {
@@ -29,6 +35,13 @@
           background-color: transparent;
           color: white;
           margin-right: 20px;
+          @include mobile {
+            border-radius: 7px;
+            margin-right: 10px;
+            position: sticky;
+            margin-top: auto;
+            margin-bottom: 70px;
+          }
         }
       }
     }
@@ -107,9 +120,17 @@
     position: absolute;
     right: 20%;
     top: 60%;
-    transform: translateY(-50%) scale(3);
-    height: auto;
-    width: auto;
+    transform: translateY(-75%) scale(3);
+    height: 300px;
+    width: 300px;
+    @include mobile {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-75%) scale(2);
+      height: 100px;
+      width: 100px;
+    }
   }
   .slidingtext {
     position: relative;
@@ -123,5 +144,8 @@
   h1 {
     font-weight: bold;
     font-size: xx-large;
+    @include mobile {
+      font-size: 12 px;
+    }
   }
 }

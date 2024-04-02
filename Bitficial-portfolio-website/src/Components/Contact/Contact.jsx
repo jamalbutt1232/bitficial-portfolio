@@ -76,8 +76,8 @@ const Contact = () => {
         >
           <svg
             fill="#000000"
-            width="500px"
-            height="500px"
+            width="250px"
+            height="250px"
             viewBox="0 0 64 64"
             version="1.1"
             xml:space="preserve"

@@ -23,7 +23,7 @@ function Services() {
       className="services"
       variants={variants}
       initial="initials"
-      whileInView="animate"
+      animate="animate"
     >
       <motion.div className="textcontainer" variants={variants}>
         <p>

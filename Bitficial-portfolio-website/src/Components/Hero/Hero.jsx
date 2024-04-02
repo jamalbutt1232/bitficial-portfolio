@@ -45,14 +45,14 @@ const Hero = () => {
             />
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           className="slidingtext"
           variants={slider}
           initial="initial"
           animate="animate"
         >
           Bitficial
-        </motion.div>
+        </motion.div> */}
 
         <motion.img
           src="./bitficial.png"
