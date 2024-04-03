@@ -47,8 +47,8 @@ const Hero = () => {
               </motion.button>
             </a>
             <br />
-
             <br />
+
             <a href="#Contact">
               <motion.button
                 whileHover={{
@@ -79,19 +79,19 @@ const Hero = () => {
         >
           Bitficial
         </motion.div>
-
-        <motion.img
-          src="./bitficial.png"
-          alt="Descriptive alt text"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            delay: 1,
-            duration: 0.8,
-            ease: "easeOut",
-          }}
-          className="imageContainer"
-        />
+        <div className="imagecontainer">
+          <motion.img
+            src="./Logo.png"
+            alt="Descriptive alt text"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: 1,
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

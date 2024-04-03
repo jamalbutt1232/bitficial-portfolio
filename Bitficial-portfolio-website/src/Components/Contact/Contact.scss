@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding-top: 100px;
   @include mobile {
     width: 100%;
     padding: 10px;
@@ -32,31 +33,40 @@
       }
     }
     span {
-      font-weight: 300;
+      font-weight: 200;
+    }
+    .map-container {
+      border: 2px solid black;
+      @include mobile {
+        display: none;
+      }
     }
   }
 
   .formcontainer {
     flex: 1;
     position: relative;
+
     @include mobile {
       padding: 50px;
       width: 100%;
     }
     .phonesvg {
-      stroke: orange;
+      padding-top: 200px;
+      stroke: violet;
       position: absolute;
       margin: auto;
       z-index: -2;
       align-self: center;
       @include mobile {
-        align-self: center;
+        display: none;
       }
     }
     .form {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      padding-top: 170px;
 
       .input {
         padding: 20px;
@@ -73,11 +83,25 @@
         padding: 20px;
         border: 1 px round black;
         border-radius: 5px;
+        @include mobile {
+          padding: 10px;
+        }
       }
       .button {
+        padding: 2px;
         cursor: pointer;
-        background-color: orange;
+        background-color: rebeccapurple;
+        color: white;
       }
+    }
+  }
+  .item {
+    h2 {
+      font-size: larger;
+      color: rebeccapurple;
+    }
+    span {
+      font-size: large;
     }
   }
 }

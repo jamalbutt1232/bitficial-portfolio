@@ -1,23 +1,33 @@
 import { useRef } from "react";
 import "./Portfolio.scss";
+
 import {
   motion,
   useScroll,
   useSpring,
   AnimatePresence,
   useTransform,
+  color,
 } from "framer-motion";
 
 const items = [
   {
     id: 1,
-    title: "Slick Comments",
-    img: "https://www.bitficial.com/assets/Logo%20Alt.png",
-    disc: "I don't always speak sarcasm, but when I do, I prefer to be fluent.",
+    title: "CoSafe App",
+    img: "https://bitficial.com/assets/Group%2048097023.png",
+    disc: (
+      <p>
+        CoSafe is an indispensable critical communication platform engineered to
+        empower organizations in alerting, managing, and proactively preventing
+        incidents. Crafted by seasoned crisis management professionals, it
+        stands as a beacon of safety, resilience, and sustainability for modern
+        enterprises
+      </p>
+    ),
   },
   {
     id: 2,
-    title: "GoBEB",
+    title: "GOBEB",
     img: "https://www.bitficial.com/assets/Logo%20(1).png",
     disc: "1111111111111111111111111111111111111111",
   },
@@ -43,11 +53,21 @@ const Single = ({ item }) => {
           <div className="imgcontainer">
             <img className="image" src={item.img} alt="" />
           </div>
-          <div className="textcontainer">
-            <h2>{item.title}</h2>
-            <p>{item.disc}</p>
-            <button>See Demo</button>
-          </div>
+          <motion.div
+            className="textcontainer"
+            whileHover={{
+              scale: 1.02,
+              backgroundColor: "black",
+              color: "purple",
+              cursor: "pointer",
+            }}
+          >
+            <h2 className="title">{item.title}</h2>
+            <motion.p className="description" whileHover={{ color: "white" }}>
+              {item.disc}/
+            </motion.p>
+            {/* <button className="demo-button">See Demo</button> */}
+          </motion.div>
         </div>
       </div>
     </section>

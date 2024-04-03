@@ -52,7 +52,7 @@ const Contact = () => {
       <motion.div className="textcontainer">
         <motion.h1>Let's work together</motion.h1>
         <motion.div className="item">
-          <motion.h2>mail</motion.h2>
+          <motion.h2>Email-address</motion.h2>
           <span>syedjawadshah00@gmail.com</span>
         </motion.div>
         <div className="item">
@@ -61,6 +61,19 @@ const Contact = () => {
             Building 58, Kick Start, A2 Gulberg 3, Millat Colony, Lahore, Punjab
             54000
           </span>
+          <div className="map-container">
+            <motion.iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.8911529860006!2d74.35741647609868!3d31.52714934680628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905ec78e36cb9%3A0xee06185bae2ad720!2sBitficial%20Technologies!5e0!3m2!1sen!2s!4v1712135600873!5m2!1sen!2s"
+              width="450"
+              height="200"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Embedded Google Map"
+              whileHover={{ scale: 1.05 }}
+            ></motion.iframe>
+          </div>
         </div>
         <div className="item">
           <h2>Phone:</h2>
@@ -76,8 +89,8 @@ const Contact = () => {
         >
           <svg
             fill="#000000"
-            width="250px"
-            height="250px"
+            width="450px"
+            height="300px"
             viewBox="0 0 64 64"
             version="1.1"
             xml:space="preserve"

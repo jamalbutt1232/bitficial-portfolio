@@ -6,7 +6,7 @@ export const ToggleButton = ({ setOpen }) => {
       <svg width="50" height="40" viewBox="0 0 24 24">
         <motion.path
           fill="none"
-          stroke="black"
+          stroke="purple"
           strokeWidth="2"
           strokeLinecap="round"
           d="M 2 2.5 L 20 2.5"
@@ -29,7 +29,7 @@ export const ToggleButton = ({ setOpen }) => {
 
         <motion.path
           fill="none"
-          stroke="black"
+          stroke="purple"
           strokeWidth="2"
           strokeLinecap="round"
           d="M 2 12 L 20 12"
@@ -42,7 +42,7 @@ export const ToggleButton = ({ setOpen }) => {
 
         <motion.path
           fill="none"
-          stroke="black"
+          stroke="purple"
           strokeWidth="2"
           strokeLinecap="round"
           d="M 2 21.5 L 20 21.5"

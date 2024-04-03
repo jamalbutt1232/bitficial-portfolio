@@ -43,6 +43,7 @@
             position: sticky;
             margin-top: auto;
             margin-bottom: 70px;
+            justify-content: flex-end;
           }
         }
       }
@@ -124,13 +125,14 @@
     }
   }
 
-  .imageContainer {
+  .imagecontainer {
     position: absolute;
     right: 20%;
     top: 60%;
     transform: translateY(-75%) scale(3);
-    height: 300px;
-    width: 300px;
+    height: 180px;
+    width: 180px;
+
     @include mobile {
       position: absolute;
       right: 10%;

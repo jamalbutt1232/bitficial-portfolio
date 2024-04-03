@@ -17,7 +17,11 @@ const Navbar = () => {
           <motion.a href="#" whileHover={{ scale: 1.1 }}>
             <img src="/facebook.png" alt="" />
           </motion.a>
-          <motion.a href="#" whileHover={{ scale: 1.1 }}>
+          <motion.a
+            href="https://www.linkedin.com/company/bitficial-tecnologies/about/"
+            target="blank"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src="/Linkedin.png" alt="" />
           </motion.a>
           <motion.a href="#" whileHover={{ scale: 1.1 }}>
