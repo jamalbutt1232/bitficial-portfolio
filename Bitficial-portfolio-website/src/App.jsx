@@ -9,7 +9,8 @@ import Parallax from "./Components/Parallax/Parallax";
 import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
-import About from "./Components/About/About";
+
+// import About from "./Components/About/About";
 function App() {
   return (
     <div>
@@ -31,9 +32,9 @@ function App() {
       <section id="Contact">
         <Contact />
       </section>
-      <section id="About">
+      {/* <section id="About">
         <About />
-      </section>
+      </section> */}
     </div>
   );
 }

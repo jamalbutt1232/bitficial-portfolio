@@ -14,26 +14,14 @@ const Navbar = () => {
           Bitficial Technologies
         </motion.span>
         <div className="social">
-          <motion.a
-            href="#"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <img src="/facebook.png" alt=""></img>
+          <motion.a href="#" whileHover={{ scale: 1.1 }}>
+            <img src="/facebook.png" alt="" />
           </motion.a>
-          <motion.a
-            href="#"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <img src="/instagram.png" alt=""></img>
+          <motion.a href="#" whileHover={{ scale: 1.1 }}>
+            <img src="/Linkedin.png" alt="" />
           </motion.a>
-          <motion.a
-            href="#"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <img src="/youtube.png" alt=""></img>
+          <motion.a href="#" whileHover={{ scale: 1.1 }}>
+            <img src="/youtube.png" alt="" />
           </motion.a>
         </div>
       </div>

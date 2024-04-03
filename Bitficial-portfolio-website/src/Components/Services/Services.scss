@@ -63,6 +63,7 @@
         }
       }
       h1 {
+        z-index: 5;
         font-size: 96px;
         font-weight: 100;
         @include mobile {
@@ -97,6 +98,7 @@
       width: 100%;
     }
     .box {
+      z-index: 6;
       padding: 50px;
       border: 0.5px solid gray;
       display: flex;
@@ -110,18 +112,17 @@
         gap: 20px;
         padding: 10px;
       }
+      h2 {
+        text-align: center;
+        font-weight: bold;
+      }
       p {
         @include mobile {
           display: none;
         }
       }
       button {
-        position: relative;
-        padding: 10;
-        background-color: orange;
-        border: none;
-        cursor: pointer;
-        z-index: 10;
+        display: none;
         @include mobile {
           background-color: transparent;
           border: 1px solid orange;

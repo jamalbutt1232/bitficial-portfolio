@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./hero.scss";
+import Portfolio from "../Portfolio/Portfolio";
+import { PureComponent } from "react";
 const textvariants = {
   scrollbuttons: {
     opacity: 0,
@@ -31,10 +34,33 @@ const Hero = () => {
           <h1 className="onetyping">We bring your ideas from </h1>
           <h1 className="typing"> Inception to Completion</h1>
           <div className="buttons">
-            <a href="Portfolio.jsx">
-              <button>See the latest works</button>
+            <a href="#Portfolio">
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: "purple",
+                  color: "black",
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                See the latest works
+              </motion.button>
             </a>
-            <button>Contact Us</button>
+            <br />
+
+            <br />
+            <a href="#Contact">
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: "violet",
+                  color: "black",
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Contact Us
+              </motion.button>
+            </a>
           </div>
           <div className="scrollbutton">
             <motion.img
