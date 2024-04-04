@@ -31,8 +31,18 @@ const Hero = () => {
     <div className="hero">
       <div className="wrapper">
         <div className="textContainer">
-          <h1 className="onetyping">We bring your ideas from </h1>
-          <h1 className="typing"> Inception to Completion</h1>
+          <motion.h1
+            className="onetyping"
+            whileHover={{ scale: 1.05, cursor: "pointer" }}
+          >
+            We bring your ideas from{" "}
+          </motion.h1>
+          <motion.h1
+            className="typing"
+            whileHover={{ scale: 1.05, cursor: "pointer" }}
+          >
+            Inception to Completion
+          </motion.h1>
           <div className="buttons">
             <a href="#Portfolio">
               <motion.button
@@ -53,7 +63,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{
                   scale: 1.1,
-                  backgroundColor: "violet",
+                  backgroundColor: "purple",
                   color: "black",
                 }}
                 whileTap={{ scale: 0.95 }}

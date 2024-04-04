@@ -142,5 +142,10 @@
         }
       }
     }
+    .box:hover {
+      background-image: url("/box.gif");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
