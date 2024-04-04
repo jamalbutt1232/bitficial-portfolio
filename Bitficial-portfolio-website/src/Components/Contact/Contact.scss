@@ -53,7 +53,7 @@
     }
     .phonesvg {
       padding-top: 200px;
-      stroke: violet;
+      stroke: #8338ec;
       position: absolute;
       margin: auto;
       z-index: -2;
@@ -79,9 +79,10 @@
         }
       }
       textarea {
-        color: black;
+        color: white;
+        background-color: transparent;
         padding: 20px;
-        border: 1 px round black;
+        border: 1px solid white;
         border-radius: 5px;
         @include mobile {
           padding: 10px;
@@ -90,7 +91,7 @@
       .button {
         padding: 2px;
         cursor: pointer;
-        background-color: rebeccapurple;
+        background-color: purple;
         color: white;
       }
     }
@@ -98,7 +99,7 @@
   .item {
     h2 {
       font-size: larger;
-      color: rebeccapurple;
+      color: purple;
     }
     span {
       font-size: large;

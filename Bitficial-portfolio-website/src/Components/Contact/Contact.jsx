@@ -50,7 +50,9 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textcontainer">
-        <motion.h1>Let's work together</motion.h1>
+        <motion.h1 whileHover={{ scale: 1.07, color: "purple" }}>
+          Let's work together
+        </motion.h1>
         <motion.div className="item">
           <motion.h2>Email-address</motion.h2>
           <span>syedjawadshah00@gmail.com</span>
@@ -85,7 +87,7 @@ const Contact = () => {
           className="phonesvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 1.5 }}
         >
           <svg
             fill="#000000"
@@ -162,7 +164,7 @@ const Contact = () => {
           className="form"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 1 }}
+          transition={{ delay: 1.8, duration: 1 }}
         >
           <input
             type="text"

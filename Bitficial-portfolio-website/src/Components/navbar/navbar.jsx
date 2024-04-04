@@ -14,9 +14,9 @@ const Navbar = () => {
           Bitficial Technologies
         </motion.span>
         <div className="social">
-          <motion.a href="#" whileHover={{ scale: 1.1 }}>
+          {/* <motion.a href="#" whileHover={{ scale: 1.1 }}>
             <img src="/facebook.png" alt="" />
-          </motion.a>
+          </motion.a> */}
           <motion.a
             href="https://www.linkedin.com/company/bitficial-tecnologies/about/"
             target="blank"
@@ -24,8 +24,12 @@ const Navbar = () => {
           >
             <img src="/Linkedin.png" alt="" />
           </motion.a>
-          <motion.a href="#" whileHover={{ scale: 1.1 }}>
-            <img src="/youtube.png" alt="" />
+          <motion.a
+            href="https://www.upwork.com/agencies/1488574052499746816/"
+            target="blank"
+            whileHover={{ scale: 1.1 }}
+          >
+            <img src="/upwork.png" height="120" alt="" />
           </motion.a>
         </div>
       </div>
