@@ -48,8 +48,8 @@ const Hero = () => {
               <motion.button
                 whileHover={{
                   scale: 1.1,
-                  backgroundColor: "purple",
-                  color: "black",
+                  backgroundColor: "#8338ec",
+                  color: "white",
                 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -63,8 +63,8 @@ const Hero = () => {
               <motion.button
                 whileHover={{
                   scale: 1.1,
-                  backgroundColor: "purple",
-                  color: "black",
+                  backgroundColor: "#8338ec",
+                  color: "white",
                 }}
                 whileTap={{ scale: 0.95 }}
               >

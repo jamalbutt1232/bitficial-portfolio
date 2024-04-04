@@ -49,13 +49,18 @@ function Services() {
         <motion.div className="title">
           {/* <img src="/kickstart.jpg" alt="" /> */}
           <h1>
-            <motion.b whileHover={{ color: "purple" }}>Unique</motion.b> ideas
+            <motion.b whileHover={{ scale: "1.05", color: "purple" }}>
+              Unique
+            </motion.b>
+            ideas
           </h1>
 
           <motion.div className="title">
             <h1>
               <br />
-              <motion.b whileHover={{ color: "purple" }}> for your </motion.b>
+              <motion.b whileHover={{ scale: "1.05", color: "purple" }}>
+                for your
+              </motion.b>
               business
             </h1>
           </motion.div>
@@ -74,6 +79,8 @@ function Services() {
         <motion.div
           className="box"
           whileHover={{
+            scale: "1.01",
+
             backgroundColor: "black",
             color: "purple",
             cursor: "pointer",
@@ -95,6 +102,7 @@ function Services() {
         <motion.div
           className="box"
           whileHover={{
+            scale: "1.01",
             backgroundColor: "black",
             color: "purple",
             cursor: "pointer",
@@ -115,6 +123,7 @@ function Services() {
         <motion.div
           className="box"
           whileHover={{
+            scale: "1.01",
             backgroundColor: "black",
             color: "purple",
             cursor: "pointer",
@@ -136,8 +145,10 @@ function Services() {
         <motion.div
           className="box"
           whileHover={{
+            scale: "1.01",
             backgroundColor: "black",
             color: "purple",
+
             cursor: "pointer",
           }}
         >

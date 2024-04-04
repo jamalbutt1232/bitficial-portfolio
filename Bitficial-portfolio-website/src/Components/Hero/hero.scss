@@ -117,7 +117,7 @@
     animation: typing 3s steps(30, end) forwards,
       blinkCursor 0.75s step-end infinite alternate;
     max-width: fit-content;
-    color: purple;
+    color: #8338ec;
     animation-delay: 3.5s;
     opacity: 0;
     @include mobile {

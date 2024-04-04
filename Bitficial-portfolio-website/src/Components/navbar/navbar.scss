@@ -16,6 +16,8 @@
     span {
       font-weight: bold;
       font-size: xx-large;
+      color: white;
+
       @include mobile {
         font-weight: bold;
         font-size: small;

@@ -68,7 +68,7 @@
         font-weight: 100;
         color: azure;
         b {
-          color: purple;
+          color: orange;
         }
         @include mobile {
           font-size: 24px;
@@ -108,6 +108,7 @@
       z-index: 6;
       padding: 50px;
       border: 0.5px solid gray;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -142,8 +143,9 @@
         }
       }
     }
+
     .box:hover {
-      background-image: url("/box.gif");
+      background-image: url("/stars.gif");
       background-size: cover;
       background-repeat: no-repeat;
     }

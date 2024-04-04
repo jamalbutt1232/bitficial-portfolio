@@ -7,12 +7,14 @@ const Navbar = () => {
       <Sidebar />
       <div className="wrapper">
         <motion.span
+          className="span1"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           Bitficial Technologies
         </motion.span>
+
         <div className="social">
           {/* <motion.a href="#" whileHover={{ scale: 1.1 }}>
             <img src="/facebook.png" alt="" />
@@ -29,7 +31,7 @@ const Navbar = () => {
             target="blank"
             whileHover={{ scale: 1.1 }}
           >
-            <img src="/upwork.png" height="120" alt="" />
+            <img src="/upwork.png" alt="" />
           </motion.a>
         </div>
       </div>
