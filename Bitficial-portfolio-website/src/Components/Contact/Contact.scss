@@ -13,7 +13,7 @@
     flex-direction: column;
   }
 
-  .textcontainer {
+  .contactcontainer {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@
     }
     .map-container {
       border: 2px solid black;
+
       @include mobile {
         display: none;
       }
@@ -73,7 +74,7 @@
         background-color: transparent;
         border: 1px solid white;
         color: white;
-        border-radius: 5px;
+        border-radius: 15px;
         @include mobile {
           padding: 10px;
         }
@@ -83,7 +84,7 @@
         background-color: transparent;
         padding: 20px;
         border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 15px;
         @include mobile {
           padding: 10px;
         }
@@ -91,6 +92,7 @@
       .button {
         padding: 2px;
         cursor: pointer;
+        border-radius: 15px;
         background-color: purple;
         color: white;
       }

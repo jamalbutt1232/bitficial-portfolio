@@ -108,6 +108,7 @@
       z-index: 6;
       padding: 50px;
       border: 0.5px solid gray;
+      border-radius: 20px;
 
       display: flex;
       flex-direction: column;
@@ -125,6 +126,8 @@
       h2 {
         text-align: center;
         font-weight: bold;
+        font-size: larger;
+        color: orange;
       }
       p {
         color: azure;
@@ -148,6 +151,9 @@
       background-image: url("/stars.gif");
       background-size: cover;
       background-repeat: no-repeat;
+    }
+    h2:hover {
+      color: purple;
     }
   }
 }

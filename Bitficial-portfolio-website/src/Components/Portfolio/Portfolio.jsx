@@ -29,7 +29,7 @@ const items = [
     id: 2,
     title: "GOBEB",
     img: "https://www.bitficial.com/assets/Logo%20(1).png",
-    disc: "1111111111111111111111111111111111111111",
+    disc: <p>1111111111111111111111111111111111111111</p>,
   },
   {
     id: 3,

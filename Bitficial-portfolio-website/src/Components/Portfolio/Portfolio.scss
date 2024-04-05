@@ -88,6 +88,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  z-index: 5;
+
+  p {
+    color: white;
+  }
 }
 
 button {
@@ -102,4 +109,9 @@ button {
   font-size: large;
   font-weight: bolder;
   color: purple;
+}
+.textcontainer:hover {
+  background-image: url("/stars.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

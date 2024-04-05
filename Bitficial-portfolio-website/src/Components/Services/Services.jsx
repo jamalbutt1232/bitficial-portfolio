@@ -50,7 +50,7 @@ function Services() {
           {/* <img src="/kickstart.jpg" alt="" /> */}
           <h1>
             <motion.b whileHover={{ scale: "1.05", color: "purple" }}>
-              Unique
+              Unique &nbsp;
             </motion.b>
             ideas
           </h1>
@@ -59,7 +59,7 @@ function Services() {
             <h1>
               <br />
               <motion.b whileHover={{ scale: "1.05", color: "purple" }}>
-                for your
+                for your &nbsp;
               </motion.b>
               business
             </h1>

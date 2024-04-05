@@ -49,7 +49,7 @@ const Contact = () => {
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textcontainer">
+      <motion.div className="contactcontainer">
         <motion.h1 whileHover={{ scale: 1.07, color: "purple" }}>
           Let's work together
         </motion.h1>
