@@ -14,6 +14,8 @@
     display: flex;
     align-items: left;
     left: 0;
+    @include mobile {
+    }
 
     .textContainer {
       width: 100%;
@@ -99,11 +101,11 @@
     white-space: nowrap;
     letter-spacing: 2px;
     animation: typing 4s steps(30, end) forwards,
-      blinkCursor 0.75s step-end infinite alternate;
+      blinkCursor 0.5s step-end infinite alternate;
     max-width: fit-content;
     color: white;
     opacity: 0;
-    animation-delay: 0.5s;
+    animation-delay: 0s;
     @include mobile {
       overflow: hidden;
     }
@@ -115,10 +117,10 @@
     white-space: nowrap;
     letter-spacing: 2px;
     animation: typing 3s steps(30, end) forwards,
-      blinkCursor 0.75s step-end infinite alternate;
+      blinkCursor 0.5s step-end infinite alternate;
     max-width: fit-content;
     color: #8338ec;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
     opacity: 0;
     @include mobile {
       color: white;
@@ -151,6 +153,7 @@
     width: 50%;
     font-weight: bold;
     @include mobile {
+      position: fixed;
       display: none;
     }
   }

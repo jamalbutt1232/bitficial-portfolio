@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./hero.scss";
 import Portfolio from "../Portfolio/Portfolio";
 import { PureComponent } from "react";
+
 const textvariants = {
   scrollbuttons: {
     opacity: 0,
@@ -13,6 +14,7 @@ const textvariants = {
     },
   },
 };
+
 const slider = {
   initial: {
     x: 0,
@@ -26,6 +28,28 @@ const slider = {
     },
   },
 };
+const backgroundVariants = {
+  hidden: { x: "-100vw", opacity: 0 }, // Starts off-screen
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 1.5, ease: "easeOut" },
+  },
+};
+
+const buttonContainer = {
+  hidden: { x: -100, opacity: 0 },
+  show: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 3,
+      duration: 1,
+    },
+  },
+};
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -43,7 +67,12 @@ const Hero = () => {
           >
             Inception to Completion
           </motion.h1>
-          <div className="buttons">
+          <motion.div
+            className="buttons"
+            variants={buttonContainer}
+            initial="hidden"
+            animate="show"
+          >
             <a href="#Portfolio">
               <motion.button
                 whileHover={{
@@ -58,7 +87,6 @@ const Hero = () => {
             </a>
             <br />
             <br />
-
             <a href="#Contact">
               <motion.button
                 whileHover={{
@@ -71,7 +99,7 @@ const Hero = () => {
                 Contact Us
               </motion.button>
             </a>
-          </div>
+          </motion.div>
           <div className="scrollbutton">
             <motion.img
               variants={textvariants}

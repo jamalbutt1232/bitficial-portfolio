@@ -118,10 +118,12 @@
 
       @include mobile {
         align-items: center;
-        border: none;
+        border-color: gray;
         align-items: center;
-        gap: 20px;
-        padding: 10px;
+        justify-content: center;
+
+        gap: 10px;
+        padding: 20px;
       }
       h2 {
         text-align: center;
@@ -132,7 +134,9 @@
       p {
         color: azure;
         @include mobile {
-          display: none;
+          font-size: 10px;
+          justify-content: center;
+          align-items: center;
         }
       }
       button {
@@ -151,9 +155,6 @@
       background-image: url("/stars.gif");
       background-size: cover;
       background-repeat: no-repeat;
-    }
-    h2:hover {
-      color: purple;
     }
   }
 }
