@@ -75,6 +75,7 @@ const Hero = () => {
           >
             <a href="#Portfolio">
               <motion.button
+                className="button1"
                 whileHover={{
                   scale: 1.1,
                   backgroundColor: "#8338ec",
@@ -89,6 +90,7 @@ const Hero = () => {
             <br />
             <a href="#Contact">
               <motion.button
+                className="button2"
                 whileHover={{
                   scale: 1.1,
                   backgroundColor: "#8338ec",

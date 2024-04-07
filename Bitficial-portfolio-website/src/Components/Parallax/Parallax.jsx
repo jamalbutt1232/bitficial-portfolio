@@ -25,7 +25,14 @@ const Parallax = ({ type }) => {
       <motion.h1>
         {type === "services" ? "What we do?" : "What we did?"}
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
+      {/* Updated motion.div for mountains with whileInView */}
+      <motion.div
+        className="mountains"
+        initial={{ opacity: 0 }} // Ensure it starts fully transparent
+        whileInView={{ opacity: 1 }} // Animate to fully opaque when in view
+        transition={{ duration: 5 }} // Duration of 1 second
+        viewport={{ once: true }} // Animation runs only once when in view
+      ></motion.div>
       <motion.div className="planets"></motion.div>
 
       <motion.div
@@ -33,9 +40,7 @@ const Parallax = ({ type }) => {
         style={{
           transform: `translateY(${offsetY * 0.5}px)`,
         }}
-      >
-        3
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };

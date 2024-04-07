@@ -21,7 +21,7 @@ body {
   color: lightgray;
 }
 @mixin mobile {
-  @media (max-width: 1080px) {
+  @media (max-width: 800px) and (min-width: 240px) {
     @content;
   }
 }
