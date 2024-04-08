@@ -162,7 +162,7 @@ const Contact = () => {
           ref={formref}
           onSubmit={sendEmail}
           className="form"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1.8, duration: 1 }}
         >

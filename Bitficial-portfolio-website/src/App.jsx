@@ -16,24 +16,24 @@ import { slides } from "./Components/data/carouseldata.json";
 const images = [
   {
     url: "https://bitficial.com/assets/Group%20277.png",
-    description: "dia",
+    description: "",
   },
   {
     url: "https://bitficial.com/assets/Logo%20Alt.png",
-    description: "Slick Comments",
+    description: "",
   },
   {
     url: "https://bitficial.com/assets/Logo%20(1).png",
-    description: "GoBEB",
+    description: "",
   },
   {
     url: "https://bitficial.com/assets/Group%2048097023.png",
-    description: "Cosafe app",
+    description: "",
   },
   {
     url: "https://bitficial.com/assets/Logo%20(2).png",
 
-    description: "Finay Music App",
+    description: "",
   },
 ];
 function App() {
