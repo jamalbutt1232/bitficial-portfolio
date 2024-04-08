@@ -21,7 +21,7 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      <div className="text">
+      <div className="textcontainer">
         <h1>Featured Projects</h1>
       </div>
       <button className="left-arrow" onClick={goToPrevious}>
