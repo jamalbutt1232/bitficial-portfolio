@@ -47,7 +47,7 @@ function Services() {
       </motion.div>
       <motion.div className="titlecontainer" variants={getVariants()}>
         <motion.div className="title">
-          <img src="/kickstart.jpg" alt="" />
+          {/* <img src="/kickstart.jpg" alt="" /> */}
           <h1>
             <motion.b whileHover={{ scale: "1.05", color: "purple" }}>
               Unique &nbsp;

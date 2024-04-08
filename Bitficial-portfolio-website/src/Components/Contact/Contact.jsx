@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
       </motion.div>
       <div className="formcontainer">
-        <motion.div
+        {/* <motion.div
           className="phonesvg"
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
@@ -157,7 +157,7 @@ const Contact = () => {
 
             <g id="_x30_1_chatting" />
           </svg>
-        </motion.div>
+        </motion.div> */}
         <motion.form
           ref={formref}
           onSubmit={sendEmail}
