@@ -26,13 +26,13 @@ const Navbar = () => {
           >
             <img src="/Linkedin.png" alt="" />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="https://www.upwork.com/agencies/1488574052499746816/"
             target="blank"
             whileHover={{ scale: 1.1 }}
           >
             <img src="/upwork.png" alt="" />
-          </motion.a>
+          </motion.a> */}
         </div>
       </div>
     </div>
