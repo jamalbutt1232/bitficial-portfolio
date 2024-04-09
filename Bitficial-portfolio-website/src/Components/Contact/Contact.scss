@@ -1,13 +1,12 @@
 @import "../../app.scss";
 .contact {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 100vh;
   margin: 50px auto;
   display: flex;
   align-items: center;
   gap: 50px;
   padding-top: 100px;
-
   @include mobile {
     width: 100%;
     padding: 10px;
@@ -15,6 +14,7 @@
   }
 
   .contactcontainer {
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -46,6 +46,7 @@
   }
 
   .formcontainer {
+    z-index: 5;
     flex: 1;
     position: relative;
 

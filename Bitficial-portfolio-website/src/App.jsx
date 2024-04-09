@@ -36,7 +36,7 @@ const images = [
     description: "",
   },
   {
-    url: "/cosafe.png",
+    url: "/cosafe (2).png",
 
     description: "",
   },

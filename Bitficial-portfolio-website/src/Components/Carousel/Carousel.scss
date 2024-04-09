@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .carousel {
   display: flex;
   flex-direction: column;
@@ -12,6 +13,12 @@
   font-size: 80px;
   font-weight: bolder;
   color: purple;
+  @include mobile {
+    font-size: 50px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image-container {
@@ -21,18 +28,23 @@
 
 .image-container img {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   height: 300px;
   display: block;
+  @include mobile {
+    max-width: 400px;
+    height: 200px;
+  }
 }
 
 .image-container .left-arrow,
 .image-container .right-arrow {
-  font-size: 50px;
+  font-size: 60px; /* Increased size */
   cursor: pointer;
   margin: 0 20px;
   margin-top: 100px;
   gap: 20px;
+  color: purple; /* Changed color */
 }
 
 .progress-bar-container {
@@ -42,6 +54,10 @@
   margin-top: 20px;
   width: 100%;
   flex-wrap: nowrap;
+  @include mobile {
+    width: 75%;
+    justify-content: center;
+  }
 }
 
 .progress-bar {
@@ -54,4 +70,12 @@
 .progress-bar.active {
   width: 130px;
   background-color: purple;
+}
+.right-arrow {
+  color: purple;
+  font-size: 100px;
+}
+.left-arrow {
+  color: purple;
+  font-size: 100px;
 }
