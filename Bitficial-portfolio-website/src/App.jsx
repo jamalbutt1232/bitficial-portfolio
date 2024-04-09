@@ -15,23 +15,28 @@ import { slides } from "./Components/data/carouseldata.json";
 // import About from "./Components/About/About";
 const images = [
   {
-    url: "https://bitficial.com/assets/Group%20277.png",
+    url: "/Slick.png",
     description: "",
   },
   {
-    url: "https://bitficial.com/assets/Logo%20Alt.png",
+    url: "/dia.png",
     description: "",
   },
   {
-    url: "https://bitficial.com/assets/Logo%20(1).png",
+    url: "/Finay.png",
     description: "",
   },
   {
-    url: "https://bitficial.com/assets/Group%2048097023.png",
+    url: "/Slick.png",
     description: "",
   },
   {
-    url: "https://bitficial.com/assets/Logo%20(2).png",
+    url: "/GOBeB.png",
+
+    description: "",
+  },
+  {
+    url: "/cosafe.png",
 
     description: "",
   },

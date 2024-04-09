@@ -20,6 +20,9 @@ body {
   background-color: #0c0c1d;
   color: lightgray;
 }
+.contact {
+  background-image: url("/stars.gif");
+}
 @mixin mobile {
   @media (max-width: 800px) and (min-width: 240px) {
     @content;
