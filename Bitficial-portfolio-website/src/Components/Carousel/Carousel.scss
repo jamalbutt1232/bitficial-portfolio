@@ -5,7 +5,14 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("/stars.gif ");
+  background-image: url("/stars.png");
+  background-attachment: fixed; // Key for parallax effect
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh; // Example height, adjust as needed
+  width: 100%;
 }
 
 .text5 h1 {
@@ -14,9 +21,10 @@
   font-weight: bolder;
   color: purple;
   @include mobile {
-    font-size: 50px;
+    margin-top: 5vh;
+    font-size: 35px;
     align-self: center;
-    justify-content: center;
+
     align-items: center;
   }
 }
@@ -74,8 +82,10 @@
 .right-arrow {
   color: purple;
   font-size: 100px;
+  z-index: 4;
 }
 .left-arrow {
   color: purple;
   font-size: 100px;
+  z-index: 4;
 }

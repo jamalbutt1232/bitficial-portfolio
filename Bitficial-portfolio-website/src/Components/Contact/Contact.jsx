@@ -180,7 +180,7 @@ const Contact = () => {
             placeholder="*Email"
             name="email"
           />
-          <textarea rows={8} placeholder="Message" name="message" />
+          <textarea rows={6} placeholder="Message" name="message" />
           <motion.button
             className="button"
             whileHover={{ scale: 1.1 }}

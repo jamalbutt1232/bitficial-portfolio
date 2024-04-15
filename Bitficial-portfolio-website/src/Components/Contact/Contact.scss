@@ -7,10 +7,12 @@
   align-items: center;
   gap: 50px;
   padding-top: 100px;
+
   @include mobile {
     width: 100%;
     padding: 10px;
     flex-direction: column;
+    overflow: scroll;
   }
 
   .contactcontainer {
@@ -41,6 +43,8 @@
 
       @include mobile {
         display: none;
+        max-height: 0px;
+        max-width: 0px;
       }
     }
   }
@@ -70,6 +74,10 @@
       flex-direction: column;
       gap: 20px;
       padding-top: 170px;
+      @include mobile {
+        padding-top: 5px;
+        margin-top: -75px;
+      }
 
       .input {
         padding: 20px;
@@ -97,6 +105,9 @@
         border-radius: 15px;
         background-color: purple;
         color: white;
+        @include mobile {
+          align-self: center;
+        }
       }
     }
   }

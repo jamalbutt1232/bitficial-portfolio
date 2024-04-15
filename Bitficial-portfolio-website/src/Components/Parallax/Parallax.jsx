@@ -38,7 +38,7 @@ const Parallax = ({ type }) => {
       <motion.div
         className="stars"
         style={{
-          transform: `translateY(${offsetY * 0.5}px)`,
+          transform: `translateY(${offsetY * 0.4}px)`,
         }}
       ></motion.div>
     </div>
